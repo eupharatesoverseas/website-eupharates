@@ -1,0 +1,24 @@
+body
+{
+	background-image: url("../images/bg2.jpg");
+	background-size: 1624px 800px;
+	background-repeat: no-repeat;
+}
+
+.mainNav{
+	margin-top: -20px;
+}
+
+
+
+
+.footerMain{
+	background-color: #555;
+	color: white;
+
+}
+
+.footerMain a{
+	color: lime;
+
+}
