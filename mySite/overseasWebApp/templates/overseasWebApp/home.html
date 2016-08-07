@@ -1,5 +1,45 @@
-{% extends "overseasWebApp/header.html" %}
-{% block content %}
-<p>This is my Homepage</p>
-<i>this is good</i>
-{% endblock %} 
+{% extends "overseasWebApp/header.html" %} {% block content %}
+<div class="container-fluid sliderContainer">
+    <div class="row">
+        <div class="col-sm-*">
+            <div id="header-slider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#header-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#header-slider" data-slide-to="1"></li>
+                    <li data-target="#header-slider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!--                       image 1 on the slider-->
+                    <div class="item active">
+                        <img class="image-responsive" src="../../static/images/slider3.jpg" alt="sliderImage1" />
+                        <div class="carousel-caption">
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <!--                        image2 on the slider-->
+                    <div class="item">
+                        <img class="image-responsive" src="../../static/images/slider2.jpg" alt="sliderImage2" />
+                        <div class="carousel-caption">
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <!--                        image3 on the slider-->
+                    <div class="item">
+                        <img class="image-responsive" src="../../static/images/slider1.jpg" alt="sliderImage3" />
+                        <div class="carousel-caption">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#header-slider" class="left carousel-control" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a href="#header-slider" class="right carousel-control" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

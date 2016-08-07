@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Eupherates Overseas</title>
-	<meta charset="utf-8">
-	{% load staticfiles%}
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="shortcut icon" href="{% static 'images/eo.png' %}" />
-	<link rel="stylesheet" href="{% static 'dist/user_css.css' %}" type="text/css"/>
+    <title>Eupherates Overseas</title>
+    <meta charset="utf-8"> {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/eo.png' %}" />
+    <link rel="stylesheet" href="{% static 'dist/user_css.css' %}" type="text/css" />
 
 </head>
-<body sty>
-	<div class="container-fluid">
-		<div class="row mainNav">
-			<div class="col-sm-*">
-				<br>
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<a class="navbar-brand" href="#">Eupherates Overseas</a>
-							<!-- <img src="{% static 'images/eo1.png' %}" class="img-responsive" alt="logoImage"> -->
-						</div>
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Page 1</a></li>
-							<li><a href="#">Page 2</a></li>
-							<li><a href="#">Page 3</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>			
-		</div>
-		<hr>
-	</div>
 
-	<footer class="container-fluid text-center footerMain">	
-		<p>&copy;Copyright 2016 All rights reserved | Developed and maintained <a href="http://www.ahmadsohaib.com">Sohaib Ahmad</a></p>		
-	</footer>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-*">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/">Eupherates Overseas</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar" ng-controller="HeaderController">
+                            <ul class="nav navbar-nav">
+                                <li ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
+                                <li ng-class="{ active: isActive('/about')}"><a href="/about">About</a></li>
+                                <li ng-class="{ active: isActive('/work')}"><a href="/about">Our Work</a></li>
+                                <li ng-class="{ active: isActive('/contact')}"><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div>
+        {% block content %} {% endblock %}
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-*">
+                <footer class="container-fluid text-center footerMain">
+                    <p>&copy; Copyright 2016 All rights reserved | Developed and maintained <a href="http://www.ahmadsohaib.com">Sohaib Ahmad</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+
 </body>
+
 </html>
