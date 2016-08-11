@@ -9,6 +9,10 @@ body {}
     width: 1380px;
 }
 
+.exporter {
+    border: 2px solid black;
+}
+
 .footerMain {
     background-color: #555;
     color: white;
