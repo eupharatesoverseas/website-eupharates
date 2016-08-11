@@ -30,8 +30,47 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 <li ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
-                                <li ng-class="{ active: isActive('/about')}"><a href="/about">About</a></li>
-                                <li ng-class="{ active: isActive('/work')}"><a href="/about">Our Work</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Introduction</a></li>
+                                        <li><a href="#">Board of Directors</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                        <li><a href="#">Clients</a></li> 
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Export
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">TMT Bars</a></li>
+                                        <li><a href="#">Garments</a></li>
+                                        <li><a href="#">Food Products</a></li>
+                                        <li><a href="#">Industrial Equipments</a></li> 
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Import
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">HMS</a></li>
+                                        <li><a href="#">Food Products</a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li> 
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information Technology
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Software Development</a></li>
+                                        <li><a href="#">Website Development</a></li>
+                                        <li><a href="#">Mobile App Developemt</a></li>
+                                        <li><a href="#">IT Support and Services</a></li> 
+                                    </ul>
+                                </li>
+
                                 <li ng-class="{ active: isActive('/contact')}"><a href="/contact">Contact</a></li>
                             </ul>
                         </div>
@@ -52,7 +91,7 @@
         <div class="row">
             <div class="col-sm-*">
                 <footer class="container-fluid text-center footerMain">
-                    <p>&copy; Copyright 2016 All rights reserved | Developed and maintained <a href="http://www.ahmadsohaib.com">Sohaib Ahmad</a></p>
+                    <p>&copy; Copyright 2016 All rights reserved | Developed and maintained Sohaib Ahmad & MOHD FAISAL RAZA</p>
                 </footer>
             </div>
         </div>
