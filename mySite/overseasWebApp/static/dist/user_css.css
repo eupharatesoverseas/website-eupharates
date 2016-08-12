@@ -1,24 +1,28 @@
 body {}
 
 .sliderContainer {
-    margin-top: -20px;
+ margin-top: -20px;
 }
 
 #header-slider img {
-    height: 560px;
-    width: 1380px;
+ height: 560px;
+ width: 1380px;
 }
 
-.exporter {
-    border: 2px solid black;
+.aboutPage {
+ /* background-image: url("../images/image1.jpg");*/
+/* width: 1200px;*/
+ /* height: 1000px;*/
+/* position: fixed;*/
+ /* min-height: 300px;*/
 }
 
 .footerMain {
-    background-color: #555;
-    color: white;
-    padding: 5px;
+ background-color: #555;
+ color: white;
+ padding: 5px;
 }
 
 .footerMain a {
-    color: lime;
+ color: lime;
 }
