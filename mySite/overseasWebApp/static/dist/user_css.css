@@ -9,6 +9,37 @@ body {}
  width: 1380px;
 }
 
+.headingService {
+ background-color: antiquewhite;
+ padding-left: 70px;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+
+.importSection {
+ margin-left: 100px;
+}
+
+.importSection img {
+ margin-left: -50px;
+}
+
+.exportSection {
+ margin-left: 110px;
+}
+
+.exportSection img {
+ margin-left: -40px;
+}
+
+.itSection img {
+ margin-left: 30px;
+}
+
+.itSection a {
+ margin-left: 90px;
+}
+
 .aboutPage {
  margin-top: -20px;
  background-color: antiquewhite;
@@ -17,6 +48,23 @@ body {}
 #board {
  margin-top: -30px;
  background-color: burlywood;
+}
+
+#finance {
+ margin-top: -30px;
+ background-color: coral;
+}
+
+#clients {
+ margin-top: -30px;
+ /* background-color: cornsilk;*/
+ background-image: url(../images/map.jpg);
+ background-attachment: fixed;
+ min-height: 500px;
+ /*
+ margin-top: 0px;
+ margin-bottom: 8px;
+*/
 }
 
 .boardPic {
