@@ -10,5 +10,7 @@ def index(request):
 def about(request):
     return render(request,'overseasWebApp/about.html')
 
+def it(request):
+    return render(request,'overseasWebApp/IT.html')
 
 # Create your views here.
