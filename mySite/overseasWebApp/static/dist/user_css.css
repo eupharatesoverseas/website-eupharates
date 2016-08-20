@@ -17,7 +17,7 @@ body {}
 }
 
 .importSection {
- margin-left: 100px;
+ margin-left: 180px;
 }
 
 .importSection img {
@@ -25,7 +25,7 @@ body {}
 }
 
 .exportSection {
- margin-left: 110px;
+ margin-left: 140px;
 }
 
 .exportSection img {
@@ -33,12 +33,14 @@ body {}
 }
 
 .itSection img {
- margin-left: 30px;
+ margin-left: 50px;
 }
 
 .itSection a {
- margin-left: 90px;
+ margin-left: 110px;
 }
+
+.textIt {}
 
 .aboutPage {
  margin-top: -20px;
@@ -80,3 +82,60 @@ body {}
 .footerMain a {
  color: lime;
 }
+
+
+/*import page CSS starts*/
+
+.titleImport {
+ /* margin-left: 50px;*/
+ margin-top: -40px;
+ background-image: url(../images/import_image.jpg);
+ background-attachment: fixed;
+ min-height: 500px;
+ color: white;
+ padding-left: 50px;
+ padding-top: 50px;
+ /* background-color: #555;*/
+}
+
+
+/*import page css ends here*/
+
+
+/*contact page CSS starts*/
+
+.contactPage img {
+ margin-top: -20px;
+ max-width: 100%;
+ max-height: 30%;
+}
+
+.contactInfo {
+ background-color: #4d4d4d;
+}
+
+.contactInfo ul {
+ margin-left: 50px;
+}
+
+.contactInfo ul a {
+ list-style-type: none;
+ text-decoration: none;
+}
+
+.contactInfo h3 {
+ margin-left: 90px;
+ color: #999900;
+}
+
+.iconContainer {
+ margin-left: 90px;
+}
+
+.contactDetails {
+ color: white;
+ margin-left: 90px;
+}
+
+
+/*contact page css ends here*/
