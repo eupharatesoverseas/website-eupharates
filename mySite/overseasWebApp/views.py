@@ -13,4 +13,11 @@ def about(request):
 def it(request):
     return render(request,'overseasWebApp/IT.html')
 
+
+def import_page(request):
+    return render(request,'overseasWebApp/Import.html')
+
+def contact_page(request):
+    return render(request,'overseasWebApp/contact.html')
+
 # Create your views here.
